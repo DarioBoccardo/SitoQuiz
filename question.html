@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domande</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Sito Domande</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Domande -->
+    <main class="container mt-5">
+        <h1 class="text-center">Domande</h1>
+
+        <!-- Domande Aperte -->
+        <h2 class="mt-4">Domande Aperte</h2>
+        <form id="formDomande">
+            <div class="mb-3">
+                <label for="domanda1" class="form-label">1. Qual è la capitale dell'Italia?</label>
+                <input type="text" class="form-control" id="domanda1" name="domanda1">
+            </div>
+            <div class="mb-3">
+                <label for="domanda2" class="form-label">2. Qual è il colore del cielo di giorno?</label>
+                <input type="text" class="form-control" id="domanda2" name="domanda2">
+            </div>
+            <div class="mb-3">
+                <label for="domanda3" class="form-label">3. Scrivi un numero compreso tra 1 e 10.</label>
+                <input type="text" class="form-control" id="domanda3" name="domanda3">
+            </div>
+            <div class="mb-3">
+                <label for="domanda4" class="form-label">4. Chi ha scoperto l'America?</label>
+                <input type="text" class="form-control" id="domanda4" name="domanda4">
+            </div>
+
+            <!-- Domande a Scelta Multipla -->
+            <h2 class="mt-4">Domande a Scelta Multipla</h2>
+            <div class="mb-3">
+                <label class="form-label">1. Qual è il pianeta più grande del sistema solare?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda5" value="Terra" id="domanda5_1">
+                    <label class="form-check-label" for="domanda5_1">Terra</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda5" value="Giove" id="domanda5_2">
+                    <label class="form-check-label" for="domanda5_2">Giove</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda5" value="Marte" id="domanda5_3">
+                    <label class="form-check-label" for="domanda5_3">Marte</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">2. Quanti giorni ci sono in un anno non bisestile?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda6" value="364" id="domanda6_1">
+                    <label class="form-check-label" for="domanda6_1">364</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda6" value="365" id="domanda6_2">
+                    <label class="form-check-label" for="domanda6_2">365</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda6" value="366" id="domanda6_3">
+                    <label class="form-check-label" for="domanda6_3">366</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">3. Qual è il simbolo chimico dell'acqua?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda7" value="H2O" id="domanda7_1">
+                    <label class="form-check-label" for="domanda7_1">H2O</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda7" value="CO2" id="domanda7_2">
+                    <label class="form-check-label" for="domanda7_2">CO2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda7" value="NaCl" id="domanda7_3">
+                    <label class="form-check-label" for="domanda7_3">NaCl</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">4. Chi ha scritto "La Divina Commedia"?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda8" value="Dante Alighieri" id="domanda8_1">
+                    <label class="form-check-label" for="domanda8_1">Dante Alighieri</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda8" value="Petrarca" id="domanda8_2">
+                    <label class="form-check-label" for="domanda8_2">Petrarca</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda8" value="Boccaccio" id="domanda8_3">
+                    <label class="form-check-label" for="domanda8_3">Boccaccio</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">5. Qual è la capitale della Francia?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda9" value="Parigi" id="domanda9_1">
+                    <label class="form-check-label" for="domanda9_1">Parigi</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda9" value="Londra" id="domanda9_2">
+                    <label class="form-check-label" for="domanda9_2">Londra</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="domanda9" value="Berlino" id="domanda9_3">
+                    <label class="form-check-label" for="domanda9_3">Berlino</label>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="salvaRisposte()">Invia Risposte</button>
+        </form>
+    </main>
+
+    <br>
+    
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 mt-auto">
+        <div class="container">
+            <p>Dario Boccardo - 5°E</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function salvaRisposte() {
+            const risposte = {
+                domanda1: document.getElementById("domanda1").value,
+                domanda2: document.getElementById("domanda2").value,
+                domanda3: document.getElementById("domanda3").value,
+                domanda4: document.getElementById("domanda4").value,
+                domanda5: document.querySelector('input[name="domanda5"]:checked')?.value || "",
+                domanda6: document.querySelector('input[name="domanda6"]:checked')?.value || "",
+                domanda7: document.querySelector('input[name="domanda7"]:checked')?.value || "",
+                domanda8: document.querySelector('input[name="domanda8"]:checked')?.value || "",
+                domanda9: document.querySelector('input[name="domanda9"]:checked')?.value || ""
+            };
+
+            const file = new Blob([JSON.stringify(risposte, null, 2)], { type: "application/json" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(file);
+            a.download = "risposte.json";
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
